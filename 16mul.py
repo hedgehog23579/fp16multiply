@@ -15,7 +15,7 @@ def mul16(a,b):
   frac_a = a&frac + 1024#?
  else:
   exp_a = (a&exp) >> 10
-  frac_a = (a&frac) + 1024 #?
+  frac_a = (a&frac) + 1024
  if((b&exp) == 0):
   exp_b = (b&exp)>>10 + 1
   frac_b = b&frac
@@ -27,7 +27,7 @@ def mul16(a,b):
  exp_o = exp_a + exp_b
  product = frac_a * frac_b
 
- if(product&0x200000):  #20000?
+ if(product&0x200000):
   exp_o = exp_o + 1
   product = product >> 1
  if(exp_o < 15):
