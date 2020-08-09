@@ -1,1 +1,1 @@
-float-point 16bit multiplier
+一個fp16的乘法器，寫ㄉ很爛，將就用
